@@ -1,5 +1,5 @@
 ﻿using System;
-﻿
+
 namespace Adventure
 {
     class Program
@@ -8,31 +8,31 @@ namespace Adventure
         {
             Console.WriteLine("Je staat aan de kust. Het is een wonder dat het water nog niet bevroren is in deze kou. De boot waarmee je bent aangekomen, is allang vertrokken.");
             Console.WriteLine("Wat wil je doen?");
-            Console.WriteLine("Keuze: Oost");
+            Console.WriteLine("1: Oost");
             string direction = Console.ReadLine();
 
-            if (direction == "Oost" || direction == "oost") 
+            if (direction == "1") 
             {
                 Console.WriteLine("Je staat buiten in de kou. Het sneeuwt en je wilt zo snel mogelijk naar binnen. Richting het noorden zie je licht branden.");
                 Console.WriteLine("Wat wil je doen?");
-                Console.WriteLine("Keuze: Noord, Oost, Zuid, West");
+                Console.WriteLine("1: Noord, 2: Oost, 3: Zuid, 4: West");
                 string directionStart = Console.ReadLine();
 
 
-                if (directionStart == "Noord" || directionStart == "noord")
+                if (directionStart == "1")
                 {
                     Console.WriteLine("Je staat voor een huis. Binnen brand licht en door het raam zie je een brandende open haard, maar geen mensen.");
                     Console.WriteLine("Wat wil je doen?");
-                    Console.WriteLine("Keuze: Zuid, Deur");
+                    Console.WriteLine("1: Zuid, 2: Deur");
                     string directionHouse = Console.ReadLine();
-                    if (directionHouse == "Zuid" || directionHouse == "zuid")
+                    if (directionHouse == "1")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je staat buiten in de kou. Het sneeuwt en je wilt zo snel mogelijk naar binnen. Richting het noorden zie je licht branden.");
                         Console.WriteLine("Wat wil je doen?");
                         Console.WriteLine("Keuze: Noord, Oost, Zuid, West");
                     }
-                    else if (directionHouse == "Deur" || directionHouse == "deur") 
+                    else if (directionHouse == "2") 
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je klopt op de deur, maar niemand doet open. Je wilt naar binnen; het is koud!");
@@ -44,20 +44,20 @@ namespace Adventure
 
 
 
-                else if (directionStart == "Oost" || directionStart == "oost")
+                else if (directionStart == "2")
                 {
                     Console.WriteLine("Je staat voor een kerk. Door het raam zie je belichting van kaarsen en fakkels. Maar er zijn geen mensen aanwezig.");
                     Console.WriteLine("Wat wil je doen?");
-                    Console.WriteLine("Keuze: West, Binnen");
+                    Console.WriteLine("1: West, 2: Binnen");
                     string directionChurch = Console.ReadLine();
-                    if (directionChurch == "West" || directionChurch == "west")
+                    if (directionChurch == "1")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je staat buiten in de kou. Het sneeuwt en je wilt zo snel mogelijk naar binnen. Richting het noorden zie je licht branden.");
                         Console.WriteLine("Wat wil je doen?");
                         Console.WriteLine("Keuze: Noord, Oost, Zuid, West");
                     }
-                    else if (directionChurch == "Binnen" || directionChurch == "binnen")
+                    else if (directionChurch == "2")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je pakt de fakkel op en neemt hem mee.");
@@ -69,20 +69,20 @@ namespace Adventure
 
 
 
-                else if (directionStart == "Zuid" || directionStart == "zuid")
+                else if (directionStart == "3")
                 {
                     Console.WriteLine("Je staat aan de rand van een donker bos. Je bent niet van plan om met dit weer het bos te gaan verkennen.");
                     Console.WriteLine("Wat wil je doen?");
-                    Console.WriteLine("Keuze: Noord, Water");
+                    Console.WriteLine("1: Noord, 2: Water");
                     string directionForest = Console.ReadLine();
-                    if (directionForest == "Noord" || directionForest == "noord")
+                    if (directionForest == "1")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je staat buiten in de kou. Het sneeuwt en je wilt zo snel mogelijk naar binnen. Richting het noorden zie je licht branden.");
                         Console.WriteLine("Wat wil je doen?");
                         Console.WriteLine("Keuze: Noord, Oost, Zuid, West");
                     }
-                    else if (directionForest == "Water" || directionForest == "water")
+                    else if (directionForest == "2")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je loopt verder het bos in en komt een eenhoorn tegen bij het water.");
@@ -94,13 +94,13 @@ namespace Adventure
 
 
 
-                else if (directionStart == "West" || directionStart == "west")
+                else if (directionStart == "4")
                 {
                     Console.WriteLine("Je staat aan de kust. Het is een wonder dat het water nog niet bevroren is in deze kou. De boot waarmee je bent aangekomen, is allang vertrokken.");
                     Console.WriteLine("Wat wil je doen?");
-                    Console.WriteLine("Keuze: Oost");
+                    Console.WriteLine("1: Oost");
                     string directionCoast = Console.ReadLine();
-                    if (directionCoast == "Oost" || directionCoast == "oost")
+                    if (directionCoast == "1")
                     {
                         Console.WriteLine("Nog niet klaar...");
                         Console.WriteLine("Je staat buiten in de kou. Het sneeuwt en je wilt zo snel mogelijk naar binnen. Richting het noorden zie je licht branden.");
@@ -113,3 +113,4 @@ namespace Adventure
         }
     }
 }
+
