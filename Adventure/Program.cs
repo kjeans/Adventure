@@ -111,10 +111,5 @@ namespace Adventure
             }
 
         }
-
-        private static object House()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
